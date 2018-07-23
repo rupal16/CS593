@@ -1,0 +1,46 @@
+SQL> select * from Department;
+
+DEPT_NAME  BUILDING       BUDGET
+---------- ---------- ----------
+cse        1               50000
+eee        2               40000
+me         3               40000
+it         4               40000
+
+SQL> delete from Department where dept_name='it';
+
+1 row deleted.
+
+SQL> select * from Department;
+
+DEPT_NAME  BUILDING       BUDGET
+---------- ---------- ----------
+cse        1               50000
+eee        2               40000
+me         3               40000
+
+
+
+
+
+
+SQL> select * from Prereq;
+
+COURSE_ID  PREREQ_ID
+---------- ----------
+100        569
+101        468
+102        478
+103        563
+
+SQL> delete from Prereq where course_id=101;
+
+1 row deleted.
+
+SQL> select * from Prereq;
+
+COURSE_ID  PREREQ_ID
+---------- ----------
+100        569
+102        478
+103        563

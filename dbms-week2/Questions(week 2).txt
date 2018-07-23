@@ -1,0 +1,49 @@
+
+
+Assignment number-02
+Questions:
+
+Implement the University Database and execute the given queries/updates University Database Schema: 
+Student (ID, name, dept-name, tot-cred)
+ Instructor (ID, name, dept-name, salary)
+ Course (Course-id, title, dept-name, credits) 
+Takes (ID, course-id, sec-id, semester, year, grade) 
+Classroom (building, room-number, capacity) 
+Department (dept-name, building, budget) 
+Section (course-id, section-id, semester, year, building, room-number, time-slot-id) 
+Teaches (id, course-id, section-id, semester, year) 
+Advisor (s-id, i-id)
+ Time-slot (time-slot-id, day, start-time, end-time) 
+Prereq (course-id, prereq-id)
+
+
+ (Retrieving records from a table):
+
+1. List all Students with names and their department names. 
+2. List all instructors in CSE department. 
+3. Find the names of courses in CSE department which have 3 credits. 
+4. For the student with ID 12345 (or any other value), show total credit for the student.  
+5. List all the instructors whose salary is in between 40000 and 90000
+
+
+Updating records from a table: 
+
+6. Change the advisor id of students with id between 100 and 200 to 1001. 
+7. Transfer all the instructors of IT department to CSE department. 
+8. Raise the salary of all the instructors by 5%. 
+
+
+Deleting records from a table: 
+
+9. Delete the IT department.
+10. Waive off perquisite for the course with course id 101. 	
+11. Delete all courses that have never been offered.
+
+
+Modifying the structure of tables: 
+
+12. Add a column Date_of_birth to student table. 
+13. Change the size of the dept-name to varchar (20). 
+14. Drop the column Date_of_birth from student table
+
+

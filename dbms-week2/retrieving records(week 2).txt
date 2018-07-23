@@ -1,0 +1,49 @@
+SQL> Select name,dept_name from Student;
+
+NAME       DEPT_NAME
+---------- ----------
+shreya     cse
+raghav     me
+alia       cse
+rashi      cse
+mayank     eee
+
+SQL> Select name from Instructor where dept_name='cse';
+
+NAME
+----------
+sayani
+gopal
+chandra
+
+SQL> update Course set title='datast' where title='abc';
+
+1 row updated.
+
+SQL> Select title from Course where dept_name='cse' AND credit=3;
+Select title from Course where dept_name='cse' AND credit=3
+                                                   *
+ERROR at line 1:
+ORA-00904: "CREDIT": invalid identifier
+
+
+SQL> Select title from Course where dept_name='cse' AND credits=3;
+
+TITLE
+----------
+datast
+
+SQL> Select tot_cred from Student where ID=103;
+
+TOT_CRED
+----------
+8-cred
+
+SQL> Select * from Instructor where salary>=40000 AND salary<=90000;
+
+ID         NAME       DEPT_NAME      SALARY
+---------- ---------- ---------- ----------
+1002       gopal      cse             42000
+1003       raj        me              46000
+1004       chandra    cse             50000
+1005       kanika     eee             47000

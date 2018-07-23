@@ -1,0 +1,69 @@
+SQL> update Advisor set s_id=1001 where s_id>100 AND s_id<200;
+
+5 rows updated.
+
+SQL> select * from Advisor;
+
+S_ID       I_ID
+---------- ----------
+1001       501
+1001       502
+1001       503
+1001       504
+1001       505
+
+
+
+
+SQL> select * from Instructor;
+
+ID         NAME       DEPT_NAME      SALARY
+---------- ---------- ---------- ----------
+1001       sayani     cse             30000
+1002       gopal      cse             42000
+1003       raj        me              46000
+1004       chandra    cse             50000
+1005       kanika     it              47000
+
+SQL> update Instructor set dept_name='cse' where dept_name='it';
+
+1 row updated.
+
+SQL> select * from Instructor;
+
+ID         NAME       DEPT_NAME      SALARY
+---------- ---------- ---------- ----------
+1001       sayani     cse             30000
+1002       gopal      cse             42000
+1003       raj        me              46000
+1004       chandra    cse             50000
+1005       kanika     cse             47000
+
+
+
+
+
+
+SQL> select * from Instructor;
+
+ID         NAME       DEPT_NAME      SALARY
+---------- ---------- ---------- ----------
+1001       sayani     cse             30000
+1002       gopal      cse             42000
+1003       raj        me              46000
+1004       chandra    cse             50000
+1005       kanika     cse             47000
+
+SQL> update Instructor set salary=salary+(salary*0.05);
+
+5 rows updated.
+
+SQL> select * from Instructor;
+
+ID         NAME       DEPT_NAME      SALARY
+---------- ---------- ---------- ----------
+1001       sayani     cse             31500
+1002       gopal      cse             44100
+1003       raj        me              48300
+1004       chandra    cse             52500
+1005       kanika     cse             49350
